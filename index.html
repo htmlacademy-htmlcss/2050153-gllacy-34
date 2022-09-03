@@ -1,12 +1,152 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   </head>
+
   <body>
+    <div class="wrapper">
+      <header class="main-header">
+        <a class="logo-link" href="#">
+          <img class="logo logo-header" src="images/logo-icon.svg" width="137" height="55.72"
+            alt="Логотип интернет-магазина Глейси.">
+        </a>
+        <nav class="navigation-menu">
+          <ul class="navigation-menu-list">
+            <li class="navigation-menu-item">
+              <button class="button-link">
+                Каталог
+              </button>
+              <div class="navigation-menu-within">
+                <ul class="catalog-within-list">
+                  <li class="catalog-within-item">
+                    <a class="within-item-link button-within within-item-link-special focus-within" href="#">Новинки</a>
+                  </li>
+                  <li class="catalog-within-item">
+                    <a class="within-item-link button-within focus-within" href="#">Сливочное</a>
+                  </li>
+                  <li class="catalog-within-item">
+                    <a class="within-item-link button-within focus-within" href="#">Щербеты</a>
+                  </li>
+                  <li class="catalog-within-item">
+                    <a class="within-item-link button-within focus-within" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="catalog-within-item">
+                    <a class="within-item-link button-within focus-within" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation-menu-item">
+              <a class="button-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="navigation-menu-item">
+              <a class="button-link" href="#">О компании</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="navigation-user">
+          <ul class="navigation-user-list">
+            <li class="navigation-menu-item">
+              <div class="header-contact">
+                <h2 class="visually-hidden">Звоните на</h2>
+                <a class="header-contact-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+              </div>
+            </li>
+            <li class="navigation-menu-item">
+              <button class="button search-button" type="submit" value="Найти">
+                <h2 class="visually-hidden">Найти</h2>
+              </button>
+              <div class="popover popover-search">
+                <form class="search-form">
+                  <label class="visually-hidden" for="search-form">Введите наименование товара в поле для поиска</label>
+                  <input class="field field-search-form" type="text" name="search-form" placeholder="Поиск по сайту"
+                    id="search-form" required>
+                </form>
+              </div>
+            </li>
+            <li class="navigation-menu-item">
+              <button class="button log-in-button" type="button">
+                Вход
+              </button>
+              <div class="popover popover-log-in">
+                <h2 class="popover-header-text">Личный кабинет</h2>
+                <form class="log-in-email-form">
+                  <label class="visually-hidden" for="log-in-email">Введите ваш е-майл</label>
+                  <input class="field field-log-in-email" type="email" name="e-mail" placeholder="email@example.com"
+                    id="log-in-email" required>
+                  <label class="visually-hidden" for="log-in-password">Введите ваш е-майл</label>
+                  <input class="field field-log-in-password" type="password" name="password" id="log-in-password"
+                    required>
+                </form>
+                <div class="popover-buttons">
+                  <button class="button button-popover" type="submit" value="log-in">Войти</button>
+                  <a class="popover-link" href="#">Забыли пароль?</a>
+                  <a class="popover-link" href="#">Регистрация</a>
+                </div>
+              </div>
+            </li>
+            <li class="navigation-menu-item">
+              <button class="button basket-button" type="button">
+                <span class="basket-number-of-products">
+                  2
+                </span>
+                товара
+              </button>
+              <div class="popover-basket">
+                <h2 class="popover-header">Корзина</h2>
+                <ul class="basket-list">
+                  <li class="basket-item">
+                    <a class="basket-link focus-within" href="#">
+                      <img class="basket-image basket-item-image-rasberry-ice-cream"
+                        src="./images/rasberry-scoop-mini.png" width="46" height="46" alt="Морожное Малинка.">
+                      <p class="basket-item-description">Малинка</p>
+                      <p class="basket-item-description-amount">1 кг х 310 ₽</p>
+                      <span class="basket-item-amount">
+                        310 ₽
+                      </span>
+                    </a>
+                    <button class="delete-button button-header focus-within">
+                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    </button>
+                  </li>
+                  <li class="basket-item">
+                    <a class="basket-link focus-within" href="#">
+                      <img class="basket-image basket-item-image-bubble-gum-ice-cream"
+                        src="./images/bubble-gum-scoop-mini.png" width="46" height="46" alt="Морожное Бабл-гам.">
+                      <p class="basket-item-description">Бабл-гам</p>
+                      <p class="basket-item-description-amount">1,5 кг х 320 ₽</p>
+                      <span class="basket-item-amount">
+                        480 ₽
+                      </span>
+                    </a>
+                    <button class="delete-button button-header focus-within">
+                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="popover-buttons">
+                  <a class="popover-button popover-basket-button" href="#">Оформить заказ</a>
+                  <p class="full-amount-text">Итого: 790 ₽</p>
+                </div>
+              </div>
+              <div class="popover-basket-no-items hidden">
+                <span class="popover-basket-no-items-text">Ваша корзина пока пуста</span>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-container main-index">
+        <section class="main-promotion">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+        </section>
+      </main>
+    </div>
   </body>
+
 </html>
