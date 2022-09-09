@@ -66,6 +66,9 @@
                   <label class="visually-hidden" for="search-form">Введите наименование товара в поле для поиска</label>
                   <input class="field field-search-form" type="text" name="search-form" placeholder="Поиск по сайту"
                     id="search-form" required>
+                  <button class="delete-button delete-button-search">
+                    <span class="visually-hidden">Удалить наименование из поля поиска</span>
+                  </button>
                 </form>
               </div>
             </li>
@@ -97,11 +100,11 @@
                 </span>
                 товара
               </button>
-              <div class="popover-basket">
-                <h2 class="popover-header">Корзина</h2>
+              <div class="popover popover-basket">
+                <h2 class="popover-header-text">Корзина</h2>
                 <ul class="basket-list">
                   <li class="basket-item">
-                    <a class="basket-link focus-within" href="#">
+                    <a class="basket-link" href="#">
                       <img class="basket-image basket-item-image-rasberry-ice-cream"
                         src="./images/rasberry-scoop-mini.png" width="46" height="46" alt="Морожное Малинка.">
                       <p class="basket-item-description">Малинка</p>
@@ -110,12 +113,12 @@
                         310 ₽
                       </span>
                     </a>
-                    <button class="delete-button focus-within">
+                    <button class="delete-button">
                       <span class="visually-hidden">Удалить товар из корзины</span>
                     </button>
                   </li>
                   <li class="basket-item">
-                    <a class="basket-link focus-within" href="#">
+                    <a class="basket-link" href="#">
                       <img class="basket-image basket-item-image-bubble-gum-ice-cream"
                         src="./images/bubble-gum-scoop-mini.png" width="46" height="46" alt="Морожное Бабл-гам.">
                       <p class="basket-item-description">Бабл-гам</p>
@@ -124,17 +127,17 @@
                         480 ₽
                       </span>
                     </a>
-                    <button class="delete-button focus-within">
+                    <button class="delete-button">
                       <span class="visually-hidden">Удалить товар из корзины</span>
                     </button>
                   </li>
                 </ul>
-                <div class="popover-buttons">
-                  <a class="button popover-button popover-basket-button" href="#">Оформить заказ</a>
+                <div class="popover-buttons popover-buttons-basket">
+                  <a class="button button-popover popover-basket-button" href="#">Оформить заказ</a>
                   <p class="full-amount-text">Итого: 790 ₽</p>
                 </div>
               </div>
-              <div class="popover-basket-no-items hidden">
+              <div class="popover popover-basket-no-items">
                 <span class="popover-basket-no-items-text">Ваша корзина пока пуста</span>
               </div>
             </li>
