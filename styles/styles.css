@@ -773,6 +773,7 @@ body {
   justify-content: flex-start;
   grid-column: 1/-1;
   min-height: 554px;
+  position: relative;
 }
 
 .slider-list {
@@ -916,7 +917,8 @@ body {
 
 .slider-pagination-button:hover,
 .slider-pagination-button-current:hover {
-  opacity: 0.6;
+  opacity: 0.3;
+  outline: 2px solid rgb(252, 252, 252, 1);
 }
 
 .slider-pagination-button:active,
@@ -927,6 +929,47 @@ body {
 .slider-pagination-button:focus-visible,
 .slider-pagination-button-current:focus-visible {
   outline: 2px solid #2D3440;
+}
+
+.slider-social-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  column-gap: 16px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+}
+
+.slider-social-button {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.slider-social-item:hover {
+  background-color: #2D3440;
+}
+
+.slider-social-item:active {
+  opacity: 0.5;
+}
+
+.slider-social-item:focus-visible {
+  background-color: #2D3440;
+  outline: 3px solid #2D3440;
+  border: none;
 }
 
 /* main-promotion */
