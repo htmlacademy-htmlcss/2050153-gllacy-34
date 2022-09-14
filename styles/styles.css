@@ -972,6 +972,33 @@ body {
   border: none;
 }
 
+.slider-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 530px;
+  position: absolute;
+  top: 216px;
+  left: 0;
+  margin-left: 30px;
+}
+
+.slider-button {
+  display: block;
+  width: 20px;
+  height: 60px;
+  color: #000000;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  background-image: url(../images/arrow-icon-slider.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-next {
+  transform: rotate(180deg);
+}
+
 /* main-promotion */
 
 .main-promotion {
