@@ -808,13 +808,15 @@ body {
   font-size: 36px;
   width: 470px;
   text-align: start;
-  margin: 0;
+  margin: 136px 0 24px 70px;
 }
 
 .slider-item-text {
   width: 414px;
   text-align: start;
   margin: 0;
+  margin-left: 70px;
+  margin-bottom: 48px;
 }
 
 .slider-item-image-group {
@@ -882,6 +884,50 @@ body {
 }
 
 .slider-image {}
+
+.slider-link-item-button {
+  margin-left: 70px;
+}
+
+.slider-pagination {
+  display: grid;
+  grid-template-columns: 12px 12px 12px;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  margin-top: auto;
+  list-style-type: none;
+}
+
+.slider-pagination-button {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #FCFCFC;
+  opacity: 0.3;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-pagination-button-current {
+  opacity: 1;
+}
+
+.slider-pagination-button:hover,
+.slider-pagination-button-current:hover {
+  opacity: 0.6;
+}
+
+.slider-pagination-button:active,
+.slider-pagination-button-current:active {
+  opacity: 0.3;
+}
+
+.slider-pagination-button:focus-visible,
+.slider-pagination-button-current:focus-visible {
+  outline: 2px solid #2D3440;
+}
 
 /* main-promotion */
 
