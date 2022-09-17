@@ -26,8 +26,9 @@ html {
   height: 100%;
 }
 
-.body {
+body {
   margin: 0;
+  display: flex;
   flex-direction: column;
   min-height: 100%;
   font-family: 'Inter', sans-serif;
@@ -38,20 +39,21 @@ html {
   color: #2D3440;
 }
 
-.body .body-blue {
+body .body-blue {
   background-color: #69A9FF;
-  display: none;
 }
 
-.body .body-pink {
-  background-color: #FEAFC3;
-  display: flex;
-}
-
-.body .body-orange {
+body .body-orange {
   background-color: #FCC850;
-  display: none;
 }
+
+.body-pink {
+  background-color: #FEAFC3;
+}
+
+/* .hidden {
+  display: none;
+} */
 
 .wrapper {
   width: 1170px;
@@ -782,6 +784,10 @@ html {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: none;
+}
+
+.slider-current {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -974,14 +980,18 @@ html {
   display: block;
   width: 38px;
   height: 38px;
-  color: #FCFCFC;
-  background-color: inherit;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
 .slider-next {
   transform: rotate(180deg);
+}
+
+.slider-button-icon {
+  color: black;
+  background-color: pink;
 }
 
 /* main-promotion */
