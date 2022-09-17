@@ -970,28 +970,43 @@ body .body-orange {
 .slider-buttons {
   display: flex;
   justify-content: space-between;
-  width: 362px;
+  width: 350px;
   position: absolute;
   top: 256px;
-  left: 536px;
+  left: 543px;
 }
 
 .slider-button {
   display: block;
+  align-items: center;
   width: 38px;
   height: 38px;
-  background-color: transparent;
+  background-color: rgba(252, 252, 252, 0.3);
+  color: #FCFCFC;
   border: none;
+  outline: 2px solid #FCFCFC;
+  border-radius: 26px;
   cursor: pointer;
 }
 
-.slider-next {
+.slider-prev {
   transform: rotate(180deg);
 }
 
-.slider-button-icon {
-  color: black;
-  background-color: pink;
+.slider-button:hover {
+  color: #2D3440;
+  background-color: #FCFCFC;
+}
+
+.slider-button:active {
+  color: #FCFCFC;
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.slider-button:focus-visible {
+  color: #2D3440;
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 2px solid #2D3440;
 }
 
 /* main-promotion */
@@ -1061,3 +1076,5 @@ body .body-orange {
   top: 0;
   right: 0;
 }
+
+/* popular-ice-cream */
