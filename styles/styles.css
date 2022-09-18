@@ -1078,3 +1078,84 @@ body .body-orange {
 }
 
 /* popular-ice-cream */
+
+.popular-ice-cream {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  column-gap: 30px;
+  justify-items: center;
+}
+
+.popular-ice-cream-title {
+  width: 527px;
+}
+
+.popular-ice-cream-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 30px;
+  justify-items: center;
+}
+
+.popular-ice-cream-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  width: 270px;
+  min-height: 281px;
+  background: #FCFCFC;
+  border-radius: 8px;
+  position: relative;
+  padding: 134px 40px 24px;
+  margin: 0;
+  margin-top: 51px;
+}
+
+.popular-ice-cream-item-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.popular-ice-cream-item-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+.popular-ice-cream-item-image {
+  position: absolute;
+  top: -49px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.price-and-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 190px;
+}
+
+.basket-item-button {
+  width: 32px;
+  min-height: 32px;
+  border-radius: 26px;
+  padding: 0;
+  padding-top: 4px;
+}
