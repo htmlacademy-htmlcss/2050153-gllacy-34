@@ -1564,9 +1564,9 @@ body .body-orange {
 .contact-us-text-extra {
   margin: 0;
   font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-color: #565C66;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565C66;
 }
 
 .contact-us-button {
@@ -1587,4 +1587,36 @@ color: #565C66;
   position: relative;
   margin: 0;
   padding: 0;
+}
+
+/* footer-menu-list */
+
+.footer-menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: repeat(2, max-content);
+  column-gap: 24px;
+  row-gap: 8px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-link-favourite {
+  font-weight: 700;
+  position: relative;
+}
+
+.footer-link-favourite::before {
+  content: url(../images/Heart-icon.svg);
+  position: absolute;
+  left: -20px;
+  top: 0;
 }
