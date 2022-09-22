@@ -476,35 +476,43 @@
         </section>
         <section class="main-delivery">
           <h2 class="section-header delivery-title">Доставка любимого мороженого на дом</h2>
-          <p class="delivery-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите
+          <p class="delivery-text">Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в магазин?
+            Закажите
             доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
           <div class="delivery-form-field">
             <p class="delivery-text delivery-text-form">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы
               подтвердить заказ.</p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="delivery-label" for="delivery-date">Дата</label>
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                  <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
-                </button>
-                <span class="tooltip-text">Введите дату доставки.</span>
-              </span>
-              <input class="field field-delivery-date" type="date" name="delivery-date" placeholder="01.04.2020"
-                id="delivery-date" required>
-              <label class="delivery-label" for="delivery-tel">Телефон</label>
-              <input class="field field-delivery-phone" type="tel" name="delivery-tel" placeholder="+7 800 999-00-00"
-                id="delivery-tel" required>
-              <label class="delivery-label" for="delivery-adress">Адрес</label>
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                  <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
-                </button>
-                <span class="tooltip-text">Введите адрес доставки.</span>
-              </span>
-              <input class="field field-delivery-adress" type="text" name="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8"
-                id="delivery-adress" required>
-              <button class="button button-popover delivery-button" type="submit" value="Отправить">Отправить</button>
+              <div class="form-item form-date">
+                <label class="delivery-label" for="delivery-date">Дата</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
+                  </button>
+                  <span class="tooltip-text">Введите дату доставки.</span>
+                </span>
+                <input class="field field-delivery-date" type="text" name="delivery-date" placeholder="01.04.2020"
+                  id="delivery-date" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"
+                  required>
+              </div>
+              <div class="form-item form-phone">
+                <label class="delivery-label" for="delivery-tel">Телефон</label>
+                <input class="field field-delivery-phone" type="tel" name="delivery-tel" placeholder="+7 800 999-00-00"
+                  id="delivery-tel" required>
+              </div>
+              <div class="form-item form-adress">
+                <label class="delivery-label" for="delivery-adress">Адрес</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
+                  </button>
+                  <span class="tooltip-text">Введите название улицы, дома и квартиры.</span>
+                </span>
+                <input class="field field-delivery-adress" type="text" name="delivery-adress"
+                  placeholder="ул. Большая Конюшенная, 19/8" id="delivery-adress" required>
+              </div>
             </form>
+            <button class="button button-popover delivery-button" type="submit" value="Отправить">Отправить</button>
           </div>
         </section>
       </main>
