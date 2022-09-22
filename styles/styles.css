@@ -1249,7 +1249,7 @@ body .body-orange {
   background-image: url(../images/blog-link-background.jpg);
   background-position: 100%;
   background-repeat: no-repeat;
-  padding: 32px;
+  padding: 33px;
 }
 
 .blog-link-header {
@@ -1259,6 +1259,7 @@ body .body-orange {
   color: #565C66;
   margin: 0;
   margin-bottom: 12px;
+  margin-top: 2px;
 }
 
 .blog-link-title {
@@ -1286,7 +1287,7 @@ body .body-orange {
 }
 
 .subscription-container {
-  padding: 26px;
+  padding: 27px;
   background-color: #FFFFFF;
   flex-grow: 1;
   border-radius: 16px;
