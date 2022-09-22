@@ -1248,6 +1248,7 @@ body .body-orange {
 .blog-link {
   background-image: url(../images/blog-link-background.jpg);
   background-position: 100%;
+  background-repeat: no-repeat;
   padding: 32px;
 }
 
@@ -1276,4 +1277,58 @@ body .body-orange {
 
 .blog-link-title:active {
   opacity: 0.3;
+}
+
+.subscription {
+  padding: 6px;
+  background-image: url(../images/subscription-background.jpg);
+  background-position: 100%;
+}
+
+.subscription-container {
+  padding: 26px;
+  background-color: #FFFFFF;
+  flex-grow: 1;
+  border-radius: 16px;
+}
+
+.subscription-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 44px;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.field-subscription {
+  padding: 14px 16px;
+  width: 332px;
+  box-sizing: border-box;
+  outline: 1px solid #B9B9B9;
+  border-radius: 4px;
+  background: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.field-subscription::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
+}
+
+.subscription-button {
+  width: 152px;
+  min-height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  box-sizing: border-box;
 }
