@@ -1187,7 +1187,6 @@ body .body-orange {
 
 .about-us-list {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   grid-column: 1/-1;
   display: grid;
@@ -1225,3 +1224,5 @@ body .body-orange {
   padding-left: 64px;
   margin: 0;
 }
+
+/* blog-subscription */
