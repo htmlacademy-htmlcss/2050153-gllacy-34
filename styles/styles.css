@@ -1159,3 +1159,69 @@ body .body-orange {
   padding: 0;
   padding-top: 4px;
 }
+
+/* main-about-us */
+
+.main-about-us {
+  grid-column: 1/-1;
+  background-image: url(../images/background-about-us.jpg);
+  background-position: 0 0, center;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.about-us-container {
+  width: 1122px;
+  display: grid;
+  grid-template-columns: repeat(2, 570px);
+  column-gap: 30px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  padding: 56px 0;
+}
+
+.about-us-title {
+  width: 995px;
+  margin-left: 63.5px;
+}
+
+.about-us-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(2, 505px);
+  column-gap: 30px;
+  row-gap: 40px;
+  margin: 0 40px;
+}
+
+.about-us-item {
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.about-us-text-ice-cream {
+  background-image: url(../images/ice-cream-icon.svg);
+}
+
+.about-us-text-suppliers {
+  background-image: url(../images/cow-icon.svg);
+}
+
+.about-us-text-ingredients {
+  background-image: url(../images/leaf.svg);
+}
+
+.about-us-text-delivery {
+  background-image: url(../images/thermometer-icon.svg);
+}
+
+.about-us-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 64px;
+  margin: 0;
+}
