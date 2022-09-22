@@ -1221,8 +1221,59 @@ body .body-orange {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  color: #565C66;
   padding-left: 64px;
   margin: 0;
 }
 
 /* blog-subscription */
+
+.blog-subscription {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(2, 570px);
+  column-gap: 30px;
+}
+
+.section-item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  min-height: 224px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+
+.blog-link {
+  background-image: url(../images/blog-link-background.jpg);
+  background-position: 100%;
+  padding: 32px;
+}
+
+.blog-link-header {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.blog-link-title {
+  width: 303px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+  cursor: pointer;
+}
+
+.blog-link-title:hover {
+  opacity: 0.6;
+}
+
+.blog-link-title:active {
+  opacity: 0.3;
+}
