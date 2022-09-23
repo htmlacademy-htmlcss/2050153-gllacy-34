@@ -172,6 +172,63 @@
               </li>
             </ul>
           </header>
+          <div class="sorted-form-block">
+            <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Сортировка:</legend>
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="cheap">по популярности</option>
+                  <option value="expensive">по цене</option>
+                  <option value="popular">по названию</option>
+                </select>
+              </fieldset>
+              <fieldset class="catalog-filter-group catalog-filter-price-group">
+                <legend class="catalog-filter-title catalog-filter-title-price">Цена:</legend>
+                <div class="catalog-filter-price-range">
+                  <div class="catalog-filter-price-range-field-from">
+                    <input class="catalog-filter-price-range-field" type="number" name="product-price" placeholder="100" id="from"><label class="catalog-filter-price-range-label" for="from">₽ &ndash;</label>
+                  </div>
+                  <div class="catalog-filter-price-range-field-to">
+                    <input class="catalog-filter-price-range-field" type="number" name="product-price" placeholder="500" id="to"><label class="catalog-filter-price-range-label" for="to">₽</label>
+                  </div>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 10px; width: 217px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Жирность:</legend>
+                <label class="control">
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="0%">
+                    <span class="control-mark control-mark-radio"></span>
+                    <span class="control-label">0%</span>
+                </label>
+                <label class="control">
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="less-then-10%" checked>
+                  <span class="control-mark control-mark-radio"></span>
+                  <span class="control-label">до 10%</span>
+                </label>
+                <label class="control">
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="less-then-30%">
+                  <span class="control-mark control-mark-radio"></span>
+                  <span class="control-label">до 30%</span>
+                </label>
+                <label class="control">
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="more-then-30%">
+                  <span class="control-mark control-mark-radio"></span>
+                  <span class="control-label">выше 30%</span>
+                </label>
+              </fieldset>
+            </form>
+          </div>
         </section>
       </main>
       <footer class="main-footer">
