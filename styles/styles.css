@@ -129,6 +129,25 @@ body .body-orange {
 .logo-link {
   margin-top: 1px;
   text-decoration: none;
+  cursor: auto;
+}
+
+.logo-link-catalog {
+  cursor: pointer;
+}
+
+.logo-link-catalog:hover {
+  opacity: 0.6;
+}
+
+.logo-link-catalog:active {
+  opacity: 0.3;
+}
+
+.logo-link-catalog:focus-visible {
+  background-color: #FFCBD8;
+  border-radius: 16px;
+  outline: transparent;
 }
 
 /* navigation-menu */
