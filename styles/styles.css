@@ -1658,3 +1658,5 @@ body .body-orange {
 .footer-link-favourite:focus-visible+.footer-link-favourite::before {
   outline: 1px solid #FCFCFC;
 }
+
+/* catalog-page */
