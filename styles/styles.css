@@ -1702,6 +1702,8 @@ body .body-orange {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs {
@@ -1710,14 +1712,18 @@ body .body-orange {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-bottom: 16px;
+  margin-top: 32px;
 }
 
-.breadcrumbs:not(:last-child) {
-  margin-right: 28px;
+.breadcrumbs-item:not(:last-child) {
+  padding-right: 28px;
+  background-image: url(../images/breadcrumbs-icon.svg);
+  background-position: right 8px top 11px;
+  background-repeat: no-repeat;
 }
 
 .breadcrumbs-link {
-  position: relative;
   text-decoration: none;
   color: inherit;
   font-weight: 700;
@@ -1725,33 +1731,23 @@ body .body-orange {
   line-height: 20px;
 }
 
-.breadcrumbs-link::after {
-  position: absolute;
-
+.breadcrumbs-link-current {
+  border-bottom: 1px solid #2D3440;
 }
 
-/* .breadcrumbs-link-text {
-  font-size: 16px;
-  line-height: 21px;
-  font-family: inherit;
-  color: inherit;
-  text-decoration: none;
-}
-
-.breadcrumbs-link-icon:hover,
-.breadcrumbs-link-text:hover {
-  color: rgba(255, 255, 255, 0.6);
+.breadcrumbs-link:hover {
   opacity: 0.6;
 }
 
-.breadcrumbs-link-icon:active,
-.breadcrumbs-link-text:active {
-  color: rgba(255, 255, 255, 0.3);
+.breadcrumbs-link:active {
   opacity: 0.3;
 }
 
-.breadcrumbs-link-text::before {
-  content: url(../images/arrow-right.svg);
-  padding: 0 10px;
-  position: relative;
-} */
+.breadcrumbs-link:focus-visible {
+  outline: 1px solid #FCFCFC;
+}
+
+.breadcrumbs-link-current:hover,
+.breadcrumbs-link-current:active {
+  opacity: 1;
+}
