@@ -322,7 +322,7 @@ body .body-orange {
 }
 
 .button-link:active,
-.button-header:focus-visible {
+.button-header:active {
   background-color: #FCFCFC;
   border-radius: 30px;
   border: none;
@@ -330,7 +330,7 @@ body .body-orange {
 }
 
 .button-link:focus-visible,
-.button-header:active {
+.button-header:focus-visible {
   background-color: rgba(252, 252, 252, 0.5);
   outline: 2px solid #2D3440;
   border-radius: 30px;
