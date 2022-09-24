@@ -1751,3 +1751,42 @@ body .body-orange {
 .breadcrumbs-link-current:active {
   opacity: 1;
 }
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.catalog-filter-group:not(:last-child) {
+  margin-right: 24px;
+}
+
+.catalog-filter-title {
+  margin-bottom: 8px;
+  margin-left: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.select-control {
+  background-color: rgb(252, 252, 252, 0.3);
+  border-radius: 20px;
+  border: none;
+  width: 196px;
+  min-height: 36px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  font-family: 'Inter';
+  font-size: 14px;
+  line-height: 20px;
+  background-image: url(../images/Arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px top 10px;
+  appearance: none;
+}
