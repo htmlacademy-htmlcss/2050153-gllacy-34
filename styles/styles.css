@@ -1790,3 +1790,43 @@ body .body-orange {
   background-position: right 10px top 10px;
   appearance: none;
 }
+
+.catalog-filter-price-group {
+  position: relative;
+}
+
+.catalog-filter-price-range {
+  display: flex;
+  position: absolute;
+  right: 70px;
+  top: -28px;
+}
+
+.catalog-filter-price-range-field {
+  background-color: transparent;
+  border: none;
+  width: 26px;
+  padding: 0;
+  appearance: textfield;
+}
+
+.catalog-filter-price-range-field::placeholder {
+  font: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog-filter-price-range-field::-webkit-outer-spin-button,
+.catalog-filter-price-range-field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-filter-price-range-label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
