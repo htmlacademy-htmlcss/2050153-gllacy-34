@@ -1703,7 +1703,7 @@ body .body-orange {
   font-size: 32px;
   line-height: 46px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .breadcrumbs {
@@ -1713,7 +1713,7 @@ body .body-orange {
   padding: 0;
   list-style-type: none;
   margin-bottom: 16px;
-  margin-top: 32px;
+  margin-top: 28px;
 }
 
 .breadcrumbs-item:not(:last-child) {
@@ -1770,7 +1770,7 @@ body .body-orange {
 
 .catalog-filter-title {
   margin-bottom: 8px;
-  margin-left: 16px;
+  margin-left: 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -1789,7 +1789,7 @@ body .body-orange {
   line-height: 20px;
   background-image: url(../images/Arrow-down.svg);
   background-repeat: no-repeat;
-  background-position: right 10px top 10px;
+  background-position: right 12px top 10px;
   appearance: none;
 }
 
@@ -1800,14 +1800,17 @@ body .body-orange {
 .catalog-filter-price-range {
   display: flex;
   position: absolute;
-  right: 49px;
+  right: 44px;
   top: -28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .catalog-filter-price-range-field {
   background-color: transparent;
   border: none;
-  width: 26px;
+  width: 30px;
   padding: 0;
   appearance: textfield;
 }
@@ -1855,11 +1858,11 @@ body .body-orange {
 .range-bar::before {
   content: "";
   position: absolute;
-  width: 56px;
+  width: 60px;
   height: 2px;
   background-color: rgb(86, 92, 102);
   top: 0;
-  left: 40px;
+  left: 38px;
 }
 
 .range-toggle {
@@ -1909,7 +1912,7 @@ body .body-orange {
 
 .toggle-max {
   top: -7px;
-  right: 68px;
+  right: 52px;
 }
 
 .control-field {
@@ -1918,9 +1921,10 @@ body .body-orange {
   border: none;
   width: max-content;
   min-height: 36px;
-  padding: 6px 16px;
+  padding: 6px 24px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   box-sizing: border-box;
 }
 
@@ -1928,8 +1932,12 @@ body .body-orange {
   min-height: 40px;
 }
 
+.control {
+  cursor: pointer;
+}
+
 .control:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 17px;
 }
 
 .control-label {
@@ -1948,8 +1956,8 @@ body .body-orange {
   border: 1.5px solid #2D3440;
   background-color: inherit;
   border-radius: 9px;
-  width: 14px;
-  height: 14px;
+  width: 13px;
+  height: 13px;
 }
 
 .control-mark-radio::after {
@@ -1960,7 +1968,7 @@ body .body-orange {
   background-color: #2D3440;
   border-radius: 50%;
   top: 4.5px;
-  left: 5.544px;
+  left: 5.2085px;
   display: none;
 }
 
@@ -1995,14 +2003,35 @@ body .body-orange {
   display: block;
 }
 
+.control-mark-radio:hover::before,
+.control-mark-checkbox:hover::before {
+  border: 1.5px solid #FCFCFC;
+}
+
+.control-mark-radio:hover::after {
+  background-color: #FCFCFC;
+}
+
+.control-mark-checkbox:hover::after {
+  content: url(../images/tick-mark-icon-hover.svg);
+}
+
+.control:disabled {
+  opacity: 0.5;
+}
+
 .catalog-filter-button {
   width: 185px;
   height: 36px;
-  margin-top: 29px;
-  padding: 8px 32px;
+  margin-top: 30px;
+  padding: 9px 32px;
   background: rgba(252, 252, 252, 0.3);
   outline: 2px solid #FCFCFC;
   border-radius: 20px;
+  margin-left: -6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .catalog-filter-button:hover {
