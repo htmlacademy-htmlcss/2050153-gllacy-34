@@ -1924,6 +1924,10 @@ body .body-orange {
   box-sizing: border-box;
 }
 
+.control-field-checkbox {
+  min-height: 40px;
+}
+
 .control:not(:last-child) {
   margin-right: 16px;
 }
@@ -1941,7 +1945,7 @@ body .body-orange {
   position: absolute;
   left: 0;
   top: -1px;
-  border: 2px solid #2D3440;
+  border: 1.5px solid #2D3440;
   background-color: inherit;
   border-radius: 9px;
   width: 14px;
@@ -1955,8 +1959,8 @@ body .body-orange {
   height: 6px;
   background-color: #2D3440;
   border-radius: 50%;
-  top: 5px;
-  left: 6px;
+  top: 4.5px;
+  left: 5.544px;
   display: none;
 }
 
@@ -1989,4 +1993,33 @@ body .body-orange {
 .control-input[type="radio"]:checked+.control-mark-radio::after,
 .control-input[type="checkbox"]:checked+.control-mark-checkbox::after {
   display: block;
+}
+
+.catalog-filter-button {
+  width: 185px;
+  height: 36px;
+  margin-top: 29px;
+  padding: 8px 32px;
+  background: rgba(252, 252, 252, 0.3);
+  outline: 2px solid #FCFCFC;
+  border-radius: 20px;
+}
+
+.catalog-filter-button:hover {
+  background: #FCFCFC;
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.catalog-filter-button:active {
+  background: rgba(252, 252, 252, 0.5);
+  outline: transparent;
+}
+
+.catalog-filter-button:focus-visible {
+  background: rgba(252, 252, 252, 0.3);
+  outline: 2px solid #2D3440;
+}
+
+.catalog-filter-button:disabled {
+  opacity: 0.4;
 }
