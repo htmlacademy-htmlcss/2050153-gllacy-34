@@ -958,7 +958,7 @@ body .body-orange {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, min-content);
-  column-gap: 16px;
+  column-gap: 19px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -2192,4 +2192,22 @@ body .body-orange {
   outline: 1px solid transparent;
   background-color: #FEAFC3;
   cursor: auto;
+}
+
+/* catalog-footer */
+
+.catalog-footer {
+  min-width: 153px;
+  margin-top: 40px;
+  padding-top: 44px;
+  position: relative;
+}
+
+.catalog-footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: -2px;
+  background-color: rgba(252, 252, 252, 0.3);
 }
