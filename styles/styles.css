@@ -1130,7 +1130,8 @@ body .body-orange {
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: repeat(4, 270px);
-  gap: 30px;
+  column-gap: 30px;
+  row-gap: 38px;
   justify-items: center;
 }
 
@@ -1147,7 +1148,7 @@ body .body-orange {
   position: relative;
   padding: 134px 40px 24px;
   margin: 0;
-  margin-top: 51px;
+  margin-top: 53px;
 }
 
 .popular-ice-cream-item-title {
@@ -1155,7 +1156,8 @@ body .body-orange {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+  margin-top: -1px;
 }
 
 .popular-ice-cream-item-text {
@@ -1163,12 +1165,12 @@ body .body-orange {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  margin-bottom: 13px;
+  margin-bottom: 17px;
 }
 
 .popular-ice-cream-item-image {
   position: absolute;
-  top: -49px;
+  top: -51px;
 }
 
 .price {
@@ -1185,11 +1187,18 @@ body .body-orange {
 }
 
 .basket-item-button {
-  width: 32px;
-  min-height: 32px;
+  width: 28px;
+  min-height: 28px;
   border-radius: 26px;
+  outline: 2px solid #FF2F64;
   padding: 0;
   padding-top: 4px;
+  margin-top: 1px;
+  margin-right: 2px;
+}
+
+.basket-item-button:hover {
+  outline: 2px solid #FF2F64;
 }
 
 /* main-about-us */
@@ -1696,6 +1705,7 @@ body .body-orange {
 .catalog-filter-block {
   display: flex;
   flex-direction: column;
+  margin-bottom: 26px;
 }
 
 .inner-header {
@@ -2080,4 +2090,10 @@ body .body-orange {
 
 .catalog-filter-button:disabled {
   opacity: 0.4;
+}
+
+/* ice-cream-catalog */
+
+.ice-cream-catalog {
+
 }
