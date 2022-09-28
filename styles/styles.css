@@ -968,15 +968,20 @@ body .body-orange {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 24px;
+  width: 22px;
+  height: 22px;
+  border: 1px rgb(231, 231, 231, 0.1);
+  border-radius: 50%;
 }
 
 .social-button {
   display: block;
   width: 28px;
   height: 28px;
+}
+
+.social-button:focus-visible {
+  outline: transparent;
 }
 
 .social-item:hover {
@@ -987,9 +992,10 @@ body .body-orange {
   opacity: 0.5;
 }
 
-.social-item:focus-visible {
+.social-item:focus-within {
   background-color: #2D3440;
   outline: 3px solid #2D3440;
+  border-radius: 24px;
   border: none;
 }
 
@@ -1791,6 +1797,16 @@ body .body-orange {
   background-repeat: no-repeat;
   background-position: right 12px top 10px;
   appearance: none;
+  cursor: pointer;
+}
+
+.select-control:hover {
+  background-color: rgb(252, 252, 252, 0.5);
+}
+
+.select-control:focus-visible {
+  background-color: rgb(252, 252, 252, 0.4);
+  outline: 2px solid #FCFCFC;
 }
 
 .catalog-filter-price-group {
@@ -1813,6 +1829,10 @@ body .body-orange {
   width: 30px;
   padding: 0;
   appearance: textfield;
+}
+
+.catalog-filter-price-range-field:focus-visible {
+  outline: transparent;
 }
 
 .catalog-filter-price-range-field::placeholder {
@@ -1902,7 +1922,7 @@ body .body-orange {
 
 .range-toggle:focus-visible {
   background-color: #FCFCFC;
-  border: 2px solid #2D3440;
+  outline: 2px solid #2D3440;
 }
 
 .toggle-min {
@@ -1968,7 +1988,7 @@ body .body-orange {
   background-color: #2D3440;
   border-radius: 50%;
   top: 4.5px;
-  left: 5.2085px;
+  left: 5.20834px;
   display: none;
 }
 
@@ -2014,6 +2034,15 @@ body .body-orange {
 
 .control-mark-checkbox:hover::after {
   content: url(../images/tick-mark-icon-hover.svg);
+}
+
+.control-input[type="checkbox"]:focus+.control-mark-checkbox::before,
+.control-input[type="checkbox"]:focus+.control-mark-checkbox::after {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input[type="radio"]:focus+.control-mark-radio::before {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .control:disabled {
