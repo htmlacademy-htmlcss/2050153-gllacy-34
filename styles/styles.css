@@ -99,14 +99,16 @@ body .body-orange {
   box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
 }
 
-.button:active,
-.button:focus-visible {
+.button:active {
   outline: 2px solid #2D3440;
+  background-color: #FCFCFC;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button:focus-visible {
+  outline: 2px solid #2D3440;
   background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button:invalid {
@@ -2099,7 +2101,7 @@ body .body-orange {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  margin: 21px 0 41px;
+  margin: 20px 0 41px;
 }
 
 .pagination {
@@ -2109,6 +2111,8 @@ body .body-orange {
   justify-content: flex-end;
   margin: 0;
   padding: 0;
+  margin-left: 303px;
+  position: relative;
 }
 
 .pagination-item {
@@ -2118,7 +2122,9 @@ body .body-orange {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  text-align: center;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .pagination-link {
@@ -2128,6 +2134,62 @@ body .body-orange {
   width: 24px;
   border-radius: 50%;
   min-height: 24px;
+  padding-top: 2px;
   color: #2D3440;
   text-decoration: none;
+  box-sizing: border-box;
+}
+
+.pagination-button {
+  min-width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-image: url(../images/Arrow-right-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination-button-less {
+  transform: rotate(180deg);
+  margin-right: 8px;
+}
+
+.pagination-button-more {
+  margin-left: 8px;
+}
+
+.pagination-item-button-current {
+  opacity: 0.3;
+}
+
+.pagination-link:hover,
+.pagination-button:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.pagination-link:active,
+.pagination-button:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 1px solid #FCFCFC;
+}
+
+.pagination-link:focus-visible,
+.pagination-button:focus-visible {
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 1px solid #2D3440;
+}
+
+.pagination-link-current {
+  background-color: #FCFCFC;
+}
+
+.pagination-item-button-current:hover,
+.pagination-item-button-current:active,
+.pagination-item-button-current:focus-visible {
+  outline: 1px solid transparent;
+  background-color: #FEAFC3;
+  cursor: auto;
 }
