@@ -39,11 +39,11 @@ body {
   color: #2D3440;
 }
 
-body .body-blue {
+.body-blue {
   background-color: #69A9FF;
 }
 
-body .body-orange {
+.body-orange {
   background-color: #FCC850;
 }
 
@@ -1185,7 +1185,6 @@ body .body-orange {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  margin-bottom: 17px;
 }
 
 .popular-ice-cream-item-image {
@@ -1204,6 +1203,7 @@ body .body-orange {
   justify-content: space-between;
   align-items: center;
   min-width: 190px;
+  margin-top: auto;
 }
 
 .basket-item-button {
