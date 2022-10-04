@@ -1226,7 +1226,9 @@ body {
 .main-about-us {
   grid-column: 1/-1;
   background-image: url(../images/background-about-us.jpg);
-  background-position: 0 0, center;
+  background-position: top, 100%;
+  background-repeat: no-repeat;
+  background-color: rgb(238, 225, 192);
   border-radius: 16px;
   padding: 24px;
 }
@@ -1307,8 +1309,8 @@ body {
 }
 
 .blog-link {
-  background-image: url(../images/blog-link-background.jpg);
-  background-position: 100%;
+  background-image: url(../images/background-blog-link.jpg);
+  background-position: top, 100%;
   background-repeat: no-repeat;
   padding: 33px;
 }
@@ -1343,8 +1345,10 @@ body {
 
 .subscription {
   padding: 6px;
-  background-image: url(../images/subscription-background.jpg);
-  background-position: 100%;
+  background-image: url(../images/background-subscription.jpg);
+  background-position: top, 100%;
+  background-repeat: no-repeat;
+  background-color: #FCFCFC;
 }
 
 .subscription-container {
@@ -1406,7 +1410,7 @@ body {
   background-color: #FCFCFC;
   background-image: url(../images/background-delivery.jpg);
   background-repeat: no-repeat;
-  background-position: top 30px, 100%;
+  background-position: top, 100%;
   min-height: 534px;
   border-radius: 16px;
   padding: 65px;
