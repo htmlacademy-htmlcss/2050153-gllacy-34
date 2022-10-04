@@ -1296,6 +1296,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 570px);
   column-gap: 30px;
+  align-items: start;
 }
 
 .section-item {
@@ -1406,6 +1407,7 @@ body {
   grid-template-columns: repeat(2, 500px);
   grid-template-rows: repeat(2, max-content);
   grid-column: 1/-1;
+  align-items: start;
   column-gap: 7px;
   background-color: #FCFCFC;
   background-image: url(../images/background-delivery.jpg);
