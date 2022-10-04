@@ -131,7 +131,7 @@ body .body-orange {
 .logo-link {
   margin-top: 1px;
   text-decoration: none;
-  cursor: auto;
+  pointer-events: none;
 }
 
 .logo-link-catalog {
@@ -913,8 +913,8 @@ body .body-orange {
 
 .slider-pagination {
   display: grid;
-  grid-template-columns: 12px 12px 12px;
-  gap: 8px;
+  grid-template-columns: 10px 10px 10px;
+  gap: 10px;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -923,34 +923,43 @@ body .body-orange {
   list-style-type: none;
 }
 
+.slider-pagination-item {
+  display: block;
+  box-sizing: border-box;
+}
+
 .slider-pagination-button {
   display: block;
-  width: 12px;
-  height: 12px;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: #FCFCFC;
-  opacity: 0.3;
+  background: rgb(252, 252, 252, 0.3);
+  outline: 2px solid rgb(252, 252, 252, 0.3);
   border: none;
   cursor: pointer;
 }
 
 .slider-pagination-button-current {
-  opacity: 1;
+  background: rgb(252, 252, 252, 1);
+  outline: 2px solid rgb(252, 252, 252, 1);
 }
 
 .slider-pagination-button:hover,
 .slider-pagination-button-current:hover {
-  opacity: 0.3;
+  background: rgb(252, 252, 252, 0.3);
   outline: 2px solid rgb(252, 252, 252, 1);
 }
 
 .slider-pagination-button:active,
 .slider-pagination-button-current:active {
-  opacity: 0.3;
+  background: rgb(252, 252, 252, 0.5);
+  outline: 2px solid rgb(252, 252, 252, 0.5);
 }
 
 .slider-pagination-button:focus-visible,
 .slider-pagination-button-current:focus-visible {
+  background: rgba(252, 252, 252, 0.3);
   outline: 2px solid #2D3440;
 }
 
@@ -996,7 +1005,8 @@ body .body-orange {
 
 .social-item:focus-within {
   background-color: #2D3440;
-  outline: 3px solid #2D3440;
+  outline: 2px solid #2D3440;
+  outline-offset: 2px;
   border-radius: 24px;
   border: none;
 }
@@ -1751,6 +1761,7 @@ body .body-orange {
 
 .breadcrumbs-link-current {
   border-bottom: 1px solid #2D3440;
+  pointer-events: none;
 }
 
 .breadcrumbs-link:hover {
@@ -1840,18 +1851,15 @@ body .body-orange {
   border: none;
   width: 30px;
   padding: 0;
+  font: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
   appearance: textfield;
 }
 
 .catalog-filter-price-range-field:focus-visible {
   outline: transparent;
-}
-
-.catalog-filter-price-range-field::placeholder {
-  font: inherit;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
 }
 
 .catalog-filter-price-range-field::-webkit-outer-spin-button,
@@ -2229,7 +2237,7 @@ body .body-orange {
   position: relative;
   margin: 10% auto auto;
   padding: 65px 64px 66px;
-  background-color: #ffffff;
+  background-color: #FCFCFC;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
   z-index: 20;
