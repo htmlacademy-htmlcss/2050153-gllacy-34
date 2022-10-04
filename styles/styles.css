@@ -890,6 +890,10 @@ body .body-orange {
   background-color: #FCDC92;
 }
 
+.slider-image {
+  z-index: -1;
+}
+
 .slider-image-small {
   opacity: 0.4;
   margin-top: 182px;
@@ -909,6 +913,7 @@ body .body-orange {
 
 .slider-link-item-button {
   margin-left: 70px;
+  max-width: 460px;
 }
 
 .slider-pagination {
@@ -1014,22 +1019,25 @@ body .body-orange {
 .slider-buttons {
   display: flex;
   justify-content: space-between;
-  width: 350px;
+  width: 348px;
   position: absolute;
-  top: 256px;
-  left: 543px;
+  top: 257px;
+  left: 544px;
 }
 
 .slider-button {
   display: block;
   align-items: center;
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   background-color: rgba(252, 252, 252, 0.3);
   color: #FCFCFC;
   border: none;
   outline: 2px solid #FCFCFC;
   border-radius: 26px;
+  padding: 0;
+  padding-left: 3px;
+  padding-top: 2px;
   cursor: pointer;
 }
 
