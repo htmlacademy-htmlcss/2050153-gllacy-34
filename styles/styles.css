@@ -1404,9 +1404,9 @@ body {
   grid-column: 1/-1;
   column-gap: 7px;
   background-color: #FCFCFC;
-  background-image: url(../images/delivery-background.jpg);
+  background-image: url(../images/background-delivery.jpg);
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: top 30px, 100%;
   min-height: 534px;
   border-radius: 16px;
   padding: 65px;
