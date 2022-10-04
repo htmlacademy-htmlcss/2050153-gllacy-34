@@ -1571,10 +1571,10 @@ body {
   display: flex;
   flex-direction: column;
   grid-column: 1/-1;
-  background-color: #edd5d5;
-  background-image: url(../images/contact-us-background.jpg);
+  background-color: rgba(206, 192, 195, 0.5);
+  background-image: url(../images/background-contact-us.jpg);
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: top, 100%;
   min-height: 492px;
   border-radius: 16px;
   padding: 64px;
