@@ -39,11 +39,11 @@ body {
   color: #2D3440;
 }
 
-body .body-blue {
+.body-blue {
   background-color: #69A9FF;
 }
 
-body .body-orange {
+.body-orange {
   background-color: #FCC850;
 }
 
@@ -131,7 +131,7 @@ body .body-orange {
 .logo-link {
   margin-top: 1px;
   text-decoration: none;
-  cursor: auto;
+  pointer-events: none;
 }
 
 .logo-link-catalog {
@@ -812,6 +812,11 @@ body .body-orange {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.slider-item {
+  min-height: 552px;
+  position: relative;
   display: none;
 }
 
@@ -819,11 +824,6 @@ body .body-orange {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.slider-item {
-  min-height: 552px;
-  position: relative;
 }
 
 .slider-title {
@@ -890,6 +890,10 @@ body .body-orange {
   background-color: #FCDC92;
 }
 
+.slider-image {
+  z-index: -1;
+}
+
 .slider-image-small {
   opacity: 0.4;
   margin-top: 182px;
@@ -909,12 +913,13 @@ body .body-orange {
 
 .slider-link-item-button {
   margin-left: 70px;
+  width: 139px;
 }
 
 .slider-pagination {
   display: grid;
-  grid-template-columns: 12px 12px 12px;
-  gap: 8px;
+  grid-template-columns: 10px 10px 10px;
+  gap: 10px;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -923,34 +928,43 @@ body .body-orange {
   list-style-type: none;
 }
 
+.slider-pagination-item {
+  display: block;
+  box-sizing: border-box;
+}
+
 .slider-pagination-button {
   display: block;
-  width: 12px;
-  height: 12px;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: #FCFCFC;
-  opacity: 0.3;
+  background: rgb(252, 252, 252, 0.3);
+  outline: 2px solid rgb(252, 252, 252, 0.3);
   border: none;
   cursor: pointer;
 }
 
 .slider-pagination-button-current {
-  opacity: 1;
+  background: rgb(252, 252, 252, 1);
+  outline: 2px solid rgb(252, 252, 252, 1);
 }
 
 .slider-pagination-button:hover,
 .slider-pagination-button-current:hover {
-  opacity: 0.3;
+  background: rgb(252, 252, 252, 0.3);
   outline: 2px solid rgb(252, 252, 252, 1);
 }
 
 .slider-pagination-button:active,
 .slider-pagination-button-current:active {
-  opacity: 0.3;
+  background: rgb(252, 252, 252, 0.5);
+  outline: 2px solid rgb(252, 252, 252, 0.5);
 }
 
 .slider-pagination-button:focus-visible,
 .slider-pagination-button-current:focus-visible {
+  background: rgba(252, 252, 252, 0.3);
   outline: 2px solid #2D3440;
 }
 
@@ -996,7 +1010,8 @@ body .body-orange {
 
 .social-item:focus-within {
   background-color: #2D3440;
-  outline: 3px solid #2D3440;
+  outline: 2px solid #2D3440;
+  outline-offset: 2px;
   border-radius: 24px;
   border: none;
 }
@@ -1004,22 +1019,25 @@ body .body-orange {
 .slider-buttons {
   display: flex;
   justify-content: space-between;
-  width: 350px;
+  width: 348px;
   position: absolute;
-  top: 256px;
-  left: 543px;
+  top: 257px;
+  left: 544px;
 }
 
 .slider-button {
   display: block;
   align-items: center;
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   background-color: rgba(252, 252, 252, 0.3);
   color: #FCFCFC;
   border: none;
   outline: 2px solid #FCFCFC;
   border-radius: 26px;
+  padding: 0;
+  padding-left: 3px;
+  padding-top: 2px;
   cursor: pointer;
 }
 
@@ -1063,15 +1081,13 @@ body .body-orange {
   padding: 0;
   grid-column: 1/-1;
   display: grid;
-  grid-template-columns: repeat(4, 270px);
-  column-gap: 30px;
-  justify-items: center;
+  grid-template-columns: repeat(2, 570px);
+  gap: 30px;
 }
 
 .promotion-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
   box-sizing: border-box;
   width: 570px;
@@ -1084,11 +1100,11 @@ body .body-orange {
 }
 
 .promotion-item:nth-child(1) {
-  grid-column: 1/3;
+  grid-column: 1/2;
 }
 
 .promotion-item:nth-child(2n) {
-  grid-column: 3/-1;
+  grid-column: 2/-1;
 }
 
 .promotion-item-title {
@@ -1096,6 +1112,7 @@ body .body-orange {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  margin-bottom: 28px;
 }
 
 .promotion-item-text {
@@ -1103,6 +1120,7 @@ body .body-orange {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
+  margin-bottom: 28px;
 }
 
 .promotion-item-image {
@@ -1167,7 +1185,6 @@ body .body-orange {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  margin-bottom: 17px;
 }
 
 .popular-ice-cream-item-image {
@@ -1186,6 +1203,7 @@ body .body-orange {
   justify-content: space-between;
   align-items: center;
   min-width: 190px;
+  margin-top: auto;
 }
 
 .basket-item-button {
@@ -1208,7 +1226,9 @@ body .body-orange {
 .main-about-us {
   grid-column: 1/-1;
   background-image: url(../images/background-about-us.jpg);
-  background-position: 0 0, center;
+  background-position: top, 100%;
+  background-repeat: no-repeat;
+  background-color: rgb(238, 225, 192);
   border-radius: 16px;
   padding: 24px;
 }
@@ -1276,6 +1296,7 @@ body .body-orange {
   display: grid;
   grid-template-columns: repeat(2, 570px);
   column-gap: 30px;
+  align-items: start;
 }
 
 .section-item {
@@ -1289,8 +1310,8 @@ body .body-orange {
 }
 
 .blog-link {
-  background-image: url(../images/blog-link-background.jpg);
-  background-position: 100%;
+  background-image: url(../images/background-blog-link.jpg);
+  background-position: top, 100%;
   background-repeat: no-repeat;
   padding: 33px;
 }
@@ -1325,8 +1346,10 @@ body .body-orange {
 
 .subscription {
   padding: 6px;
-  background-image: url(../images/subscription-background.jpg);
-  background-position: 100%;
+  background-image: url(../images/background-subscription.jpg);
+  background-position: top, 100%;
+  background-repeat: no-repeat;
+  background-color: #FCFCFC;
 }
 
 .subscription-container {
@@ -1384,11 +1407,12 @@ body .body-orange {
   grid-template-columns: repeat(2, 500px);
   grid-template-rows: repeat(2, max-content);
   grid-column: 1/-1;
+  align-items: start;
   column-gap: 7px;
   background-color: #FCFCFC;
-  background-image: url(../images/delivery-background.jpg);
+  background-image: url(../images/background-delivery.jpg);
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: top, 100%;
   min-height: 534px;
   border-radius: 16px;
   padding: 65px;
@@ -1553,10 +1577,10 @@ body .body-orange {
   display: flex;
   flex-direction: column;
   grid-column: 1/-1;
-  background-color: #edd5d5;
-  background-image: url(../images/contact-us-background.jpg);
+  background-color: rgba(206, 192, 195, 0.5);
+  background-image: url(../images/background-contact-us.jpg);
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: top, 100%;
   min-height: 492px;
   border-radius: 16px;
   padding: 64px;
@@ -1751,6 +1775,7 @@ body .body-orange {
 
 .breadcrumbs-link-current {
   border-bottom: 1px solid #2D3440;
+  pointer-events: none;
 }
 
 .breadcrumbs-link:hover {
@@ -1840,18 +1865,15 @@ body .body-orange {
   border: none;
   width: 30px;
   padding: 0;
+  font: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
   appearance: textfield;
 }
 
 .catalog-filter-price-range-field:focus-visible {
   outline: transparent;
-}
-
-.catalog-filter-price-range-field::placeholder {
-  font: inherit;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
 }
 
 .catalog-filter-price-range-field::-webkit-outer-spin-button,
@@ -2063,13 +2085,13 @@ body .body-orange {
 
 .catalog-filter-button {
   width: 185px;
-  height: 36px;
+  height: 35px;
   margin-top: 30px;
-  padding: 9px 32px;
+  padding: 8px 32px;
   background: rgba(252, 252, 252, 0.3);
-  outline: 2px solid #FCFCFC;
+  outline: 3px solid #FCFCFC;
   border-radius: 20px;
-  margin-left: -6px;
+  margin-left: -5px;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -2077,7 +2099,7 @@ body .body-orange {
 
 .catalog-filter-button:hover {
   background: #FCFCFC;
-  outline: 2px solid rgba(252, 252, 252, 0.3);
+  outline: 3px solid rgba(252, 252, 252, 0.3);
 }
 
 .catalog-filter-button:active {
@@ -2087,7 +2109,7 @@ body .body-orange {
 
 .catalog-filter-button:focus-visible {
   background: rgba(252, 252, 252, 0.3);
-  outline: 2px solid #2D3440;
+  outline: 3px solid #2D3440;
 }
 
 .catalog-filter-button:disabled {
@@ -2229,7 +2251,7 @@ body .body-orange {
   position: relative;
   margin: 10% auto auto;
   padding: 65px 64px 66px;
-  background-color: #ffffff;
+  background-color: #FCFCFC;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
   z-index: 20;
