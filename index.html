@@ -11,8 +11,8 @@
   <body class="body-pink body-blue body-orange">
     <div class="wrapper">
       <header class="main-header">
-        <a class="logo-link">
-          <img class="logo logo-header" src="images/logo-icon.svg" width="137" height="55.72"
+        <a class="logo-link index-logo-link">
+          <img class="logo logo-header" src="images/logo-icon.svg" width="137" height="56"
             alt="Логотип интернет-магазина Глейси.">
         </a>
         <nav class="navigation-menu">
@@ -59,14 +59,14 @@
             </li>
             <li class="navigation-user-item">
               <button class="button button-header search-button" type="submit" value="Найти">
-                <h2 class="visually-hidden">Найти</h2>
+                <span class="visually-hidden">Найти</span>
                 <svg width="16" height="17" viewBox="0 0 16 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M2.66 8.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z" />
                 </svg>
               </button>
               <div class="popover popover-search">
-                <form class="search-form">
+                <form class="search-form" method="get">
                   <label class="visually-hidden" for="search-form">Введите наименование товара в поле для поиска</label>
                   <input class="field field-search-form" type="search" name="search-form" placeholder="Поиск по сайту"
                     id="search-form" required>
@@ -359,6 +359,7 @@
               <div class="price-and-button">
                 <b class="price">310 ₽/кг</b>
                 <button class="button button-popover basket-item-button" type="button">
+                  <span class="visually-hidden">Кнопка - добавить в карзину.</span>
                   <svg width="16" height="17" viewBox="0 0 16 17" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -375,6 +376,7 @@
               <div class="price-and-button">
                 <b class="price">340 ₽/кг</b>
                 <button class="button button-popover basket-item-button" type="button">
+                  <span class="visually-hidden">Кнопка - добавить в карзину.</span>
                   <svg width="16" height="17" viewBox="0 0 16 17" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -391,6 +393,7 @@
               <div class="price-and-button">
                 <b class="price">330 ₽/кг</b>
                 <button class="button button-popover basket-item-button" type="button">
+                  <span class="visually-hidden">Кнопка - добавить в карзину.</span>
                   <svg width="16" height="17" viewBox="0 0 16 17" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -407,6 +410,7 @@
               <div class="price-and-button">
                 <b class="price">320 ₽/кг</b>
                 <button class="button button-popover basket-item-button" type="button">
+                  <span class="visually-hidden">Кнопка - добавить в карзину.</span>
                   <svg width="16" height="17" viewBox="0 0 16 17" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -482,7 +486,7 @@
               <div class="form-item form-date">
                 <label class="delivery-label" for="delivery-date">Дата</label>
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <button class="tooltip-toggle" type="button">
                     <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
                   </button>
                   <span class="tooltip-text">Введите дату доставки.</span>
@@ -499,7 +503,7 @@
               <div class="form-item form-adress">
                 <label class="delivery-label" for="delivery-adress">Адрес</label>
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <button class="tooltip-toggle" type="button">
                     <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
                   </button>
                   <span class="tooltip-text">Введите название улицы, дома и квартиры.</span>
@@ -530,8 +534,8 @@
         </section>
       </main>
       <footer class="main-footer">
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-list footer-social-list">
-          <h2 class="visually-hidden">Социальные сети</h2>
           <li class="social-item">
             <a class="social-button button-telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Наш Телеграм</span>
@@ -566,8 +570,8 @@
             </a>
           </li>
         </ul>
+        <h2 class="visually-hidden">Ссыслки на полезную информацию.</h2>
         <ul class="footer-menu-list">
-          <h2 class="visually-hidden">Ссыслки на полезную информацию.</h2>
           <li class="footer-menu-item">
             <a class="footer-link footer-link-favourite" href="#">Для поставщиков</a>
           </li>
@@ -617,12 +621,11 @@
               placeholder="email@example.com" required>
             <label class="visually-hidden" for="content">Введите ваш вопрос или опешите проблему.</label>
             <textarea class="feedback-modal-field-content field-modal field" id="content" name="content"
-              placeholder="В свободной форме"required></textarea>
+              placeholder="В свободной форме" required></textarea>
             <button class="button button-popover feedback-modal-form-button" type="submit">Отправить</button>
           </form>
         </section>
       </div>
     </div>
   </body>
-
 </html>

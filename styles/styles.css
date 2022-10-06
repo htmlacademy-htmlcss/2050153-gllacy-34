@@ -51,10 +51,6 @@ body {
   background-color: #FEAFC3;
 }
 
-/* .hidden {
-  display: none;
-} */
-
 .wrapper {
   width: 1170px;
   margin: 0 auto;
@@ -131,6 +127,9 @@ body {
 .logo-link {
   margin-top: 1px;
   text-decoration: none;
+}
+
+.index-logo-link {
   pointer-events: none;
 }
 
@@ -435,6 +434,7 @@ body {
   right: 16px;
   width: 16px;
   height: 16px;
+  padding: 0;
   opacity: 0.4;
 }
 
@@ -444,6 +444,10 @@ body {
   left: 0;
   width: 16px;
   height: 1px;
+}
+
+.field-search-form::-webkit-search-cancel-button {
+  display: none;
 }
 
 .field-search-form:placeholder-shown~.delete-button-search {
@@ -2015,14 +2019,13 @@ body {
 }
 
 .control-mark-radio::after {
-  content: "";
+  content: url(../images/radio-button-checked.svg);
   position: absolute;
-  width: 6px;
-  height: 6px;
-  background-color: #2D3440;
+  width: 13px;
+  height: 13px;
+  left: 0;
+  top: -1px;
   border-radius: 50%;
-  top: 4.5px;
-  left: 5.20834px;
   display: none;
 }
 
@@ -2048,7 +2051,8 @@ body {
   top: -1px;
 }
 
-.control-input[type="checkbox"]:checked+.control-mark-checkbox::before {
+.control-input[type="checkbox"]:checked+.control-mark-checkbox::before,
+.control-input[type="radio"]:checked+.control-mark-radio::before {
   display: none;
 }
 
@@ -2063,7 +2067,7 @@ body {
 }
 
 .control-mark-radio:hover::after {
-  background-color: #FCFCFC;
+  content: url(../images/radio-button-checked-hover.svg);
 }
 
 .control-mark-checkbox:hover::after {
@@ -2174,17 +2178,13 @@ body {
   cursor: pointer;
 }
 
-.pagination-button-less {
+.pagination-button-before {
   transform: rotate(180deg);
   margin-right: 8px;
 }
 
-.pagination-button-more {
+.pagination-button-next {
   margin-left: 8px;
-}
-
-.pagination-item-button-current {
-  opacity: 0.3;
 }
 
 .pagination-link:hover,
@@ -2202,18 +2202,6 @@ body {
 .pagination-button:focus-visible {
   background-color: rgba(252, 252, 252, 0.3);
   outline: 1px solid #2D3440;
-}
-
-.pagination-link-current {
-  background-color: #FCFCFC;
-}
-
-.pagination-item-button-current:hover,
-.pagination-item-button-current:active,
-.pagination-item-button-current:focus-visible {
-  outline: 1px solid transparent;
-  background-color: #FEAFC3;
-  cursor: auto;
 }
 
 /* catalog-footer */
